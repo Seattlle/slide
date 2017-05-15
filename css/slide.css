@@ -36,3 +36,23 @@
     white-space: nowrap;
     word-wrap: normal;
 }
+.ui-slide-wrapper .ui-slide-btn{
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index: 100;
+    display: none;
+    color:#fff;
+    text-decoration: none;
+    background-image: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.7) 100%);
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.7) 100%);
+}
+.ui-slide-wrapper:hover .ui-slide-btn{
+    display: block;
+}
+.ui-slide-wrapper .prebtn{
+    left:0;
+}
+.ui-slide-wrapper .nextbtn{
+    right:0;
+}

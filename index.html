@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./css/slide.css">
 </head>
 <body>
-	<div class="ui-slide-wrapper">
+	<div class="ui-slide-wrapper" id="slide">
 		<div class="ui-slide">
 			<div class="ui-slide-item">
 				<a class="ui-slide-link" href="#">
@@ -28,7 +28,12 @@
 				</a>
 			</div>
 		</div>
+        <a href="javascript:;" class="ui-slide-btn prebtn">上一页</a>
+        <a href="javascript:;" class="ui-slide-btn nextbtn">下一页</a>
 	</div>
 	<script src="./js/slide.js"></script>
+    <script>
+        Slide({id:'#slide',auto:true});
+    </script>
 </body>
 </html>
